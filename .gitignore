@@ -1,3 +1,6 @@
+/assets
+.assets
+./assets
 # Logs
 logs
 *.log
@@ -126,3 +129,10 @@ dist
 .yarn/install-state.gz
 .pnp.*
 .prettierrc
+asset/forkify-architecture-recipe-loading.png
+asset/forkify-flowchart-part-1.png
+asset/forkify-flowchart-part-2.png
+asset/forkify-flowchart-part-3.png
+assets/forkify-architecture-recipe-loading.png
+assets/forkify-flowchart-part-1.png
+assets/forkify-architecture-recipe-loading.png
