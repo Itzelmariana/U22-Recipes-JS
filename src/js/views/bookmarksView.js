@@ -5,6 +5,10 @@ class BookmarksView extends View {
   _errorMessage = 'No bookmarks yet. Find a nice recipe and bookmark it.';
   _message = '';
 
+  addHandlerRender(handler) {
+    window.addEventListener('load', handler);
+  }
+
   _generateMarkup() {
     return this._data.map(this._generateMarkupPreview).join('');
   }
@@ -22,7 +26,11 @@ class BookmarksView extends View {
           <div class="preview__data">
             <h4 class="preview__title">${results.title}</h4>
             <p class="preview__publisher">${results.publisher}</p>
+
+            
           </div>
+          
+  
         </a>
       </li>
     `;
