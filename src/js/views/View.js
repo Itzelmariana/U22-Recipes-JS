@@ -13,6 +13,10 @@ export default class View {
    *
    */
 
+  _clear() {
+    this._parentElement.innerHTML = '';
+  }
+
   render(data) {
     if (!data || (Array.isArray(data) && data.length === 0))
       return this.renderError();
@@ -45,10 +49,6 @@ export default class View {
         );
       }
     });
-  }
-
-  _clear() {
-    this._parentElement.innerHTML = '';
   }
 
   renderSpinner() {
